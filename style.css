@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.card {
+.card-male .card-female {
   margin: 20px 0;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 10px;
@@ -17,15 +17,54 @@
   transition: transform 0.2s;
   cursor: pointer;
 }
+.card-male {
+  background-color: rgb(53, 97, 155);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 1px 5px 16px 1px #000000;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
 
-.card:hover {
+.card-female {
+  background-color: rgb(231, 126, 231);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 1px 5px 16px 1px #000000;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card-male:hover {
+  transform: scale(1.1);
+}
+
+.card-female:hover {
   transform: scale(1.1);
 }
 
 h2 {
   font-size: 2rem;
+  color: white;
 }
 
 p {
   font-size: 1rem;
+  color: white;
+}
+
+p .fas {
+  padding-left: 10px;
+}
+
+p .far {
+  padding-right: 10px;
+}
+
+img {
+  width: 150px;
 }
